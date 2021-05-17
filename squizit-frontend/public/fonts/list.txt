@@ -1,0 +1,4 @@
+for i in $(cat ../katex.min.css | tr "()" "\n" | grep fonts/)
+do
+	wget https://cdn.jsdelivr.net/npm/katex@0.13.3/dist/$i
+done
